@@ -1,0 +1,23 @@
+# requirements.txt
+# Abhängigkeiten für das Apertus-8B-Instruct-2509 Projekt
+
+# Core dependencies
+torch>=2.0.0
+transformers>=4.30.0
+tokenizers>=0.13.0
+
+# Optional dependencies für erweiterte Funktionen
+accelerate>=0.20.0          # Für Multi-GPU und optimierte Inferenz
+bitsandbytes>=0.39.0        # Für Quantisierung (optional)
+scipy>=1.10.0               # Für einige Transformers-Funktionen
+safetensors>=0.3.0          # Für sichere Modell-Serialisierung
+
+# Development dependencies (optional)
+jupyter>=1.0.0              # Für Jupyter Notebooks
+ipywidgets>=8.0.0           # Für interaktive Widgets in Notebooks
+matplotlib>=3.5.0           # Für Visualisierungen
+numpy>=1.21.0               # Für numerische Operationen
+psutil>=5.9.0               # Für System-Monitoring
+
+# CUDA-spezifische Installation (wenn GPU verfügbar):
+# pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
